@@ -16,7 +16,10 @@ extra-source-files:  README.md
 executable discord-booklets
   hs-source-dirs:      src
   main-is:             Main.hs
+  ghc-options:         -threaded
   default-language:    Haskell2010
+  other-modules:       Dispatch
+                     , Util
   build-depends:       base >= 4.7 && < 5
                      , text
                      , discord-haskell
