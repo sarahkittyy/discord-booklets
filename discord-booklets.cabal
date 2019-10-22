@@ -21,9 +21,11 @@ executable discord-booklets
   other-modules:       Dispatch
                      , Util
                      , Books
+                     , Commands
   build-depends:       base >= 4.7 && < 5
                      , text
                      , discord-haskell
                      , containers
                      , aeson
                      , bytestring
+                     , split
