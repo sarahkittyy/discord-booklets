@@ -18,7 +18,13 @@ import Data.List.Split
 -- | Send an error to the user
 sendError :: DiscordHandle -> Message -> String -> IO ()
 sendError dis msg err = (\_ -> return ()) =<<
-                            (restCall dis $ R.CreateMessage (messageChannel msg) $ pack err)
+                            (restCall dis $ R.CreateMessageEmbed (messageChannel msg) "" Embed { embedTitle = Just "Error"
+                                                                                               , embedType = Just "rich"
+                                                                                               , embedDescription = Just (pack err)
+                                                                                               , embedUrl = Nothing
+                                                                                               , embedTimestamp = Nothing
+                                                                                               , embedColor = Just 0xFF0000
+                                                                                               , embedFields = []})
 
 -- | Main discord event handler.
 dispatch :: DiscordHandle -> Event -> IO ()
