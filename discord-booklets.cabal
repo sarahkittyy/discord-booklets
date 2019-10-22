@@ -20,6 +20,10 @@ executable discord-booklets
   default-language:    Haskell2010
   other-modules:       Dispatch
                      , Util
+                     , Books
   build-depends:       base >= 4.7 && < 5
                      , text
                      , discord-haskell
+                     , containers
+                     , aeson
+                     , bytestring

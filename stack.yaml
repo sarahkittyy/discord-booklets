@@ -47,6 +47,9 @@ extra-deps:
 - connection-0.2.8@sha256:b33ed18b274e9d65ffefcda46ba3d6ff852bec1e7ffcb686985228dc52631c2e,1525
 - retry-0.7.7.0@sha256:7b00ea9a64adec514a830209ae3d75919d5b510eb688783634f61469b4d3d182,2292
 - socks-0.5.6@sha256:bb051589a00d18301556dbff82d89955a5534baf91a5e050e5f3a65f3415609c,1299
+- aeson-1.4.5.0
+- containers-0.6.0.1
+- bytestring-0.10.8.2
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
