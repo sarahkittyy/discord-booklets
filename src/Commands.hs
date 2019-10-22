@@ -10,6 +10,11 @@ import qualified Discord.Requests as R
 import Data.Map
 import Prelude hiding (lookup)
 
+-- | Persistent environment contained with the bot
+
+-- | Args passed to a command
+
+
 -- | The type of a command handler
 type CommandHandle = DiscordHandle -> Message -> [String] -> IO (Maybe String)
     
