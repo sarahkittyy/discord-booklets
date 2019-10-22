@@ -1,13 +1,11 @@
 {
 	"books": {
-		"book1": [
+		"book-foo": [
 			"this is page 1",
 			"this is page 2",
-			"this is page 3 uwu",
-			"uwu",
-			"last page rn"	
+			"this is page 3"
 		],
-		"book2": [
+		"book-bar": [
 			"this is the second book ig",
 			"all is well"
 		]
