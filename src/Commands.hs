@@ -29,7 +29,7 @@ runCommand dis msg args =
     
 -- * COMMANDS START HERE
 help :: CommandHandle
-help dis msg args = pure Nothing
+help dis msg args = pure (Just "what the frick")
 
 openBook :: CommandHandle
 openBook dis msg args = pure Nothing
